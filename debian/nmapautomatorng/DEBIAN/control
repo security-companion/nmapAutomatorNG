@@ -1,0 +1,11 @@
+Package: nmapautomatorng
+Version: 1.0-1
+Architecture: all
+Maintainer: Joachim Mammele <mail@security-companion.net>
+Installed-Size: 13
+Section: utils
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/security-companion/nmapAutomatorNG
+Description: penetration recon script
+ The main goal for this script is to automate the process of enumeration & recon that is run every time, and instead focus our attention on real pentesting.
