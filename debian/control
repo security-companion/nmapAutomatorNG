@@ -1,5 +1,5 @@
 Source: nmapautomatorng
-Section: utils
+Section: misc
 Priority: optional
 Maintainer: Joachim Mammele <mail@security-companion.net>
 Rules-Requires-Root: no
@@ -7,20 +7,10 @@ Build-Depends:
  debhelper-compat (= 13),
 Standards-Version: 4.6.2
 Homepage: https://github.com/security-companion/nmapAutomatorNG
-#Vcs-Browser: https://salsa.debian.org/debian/nmapautomatorng
-#Vcs-Git: https://salsa.debian.org/debian/nmapautomatorng.git
 
 Package: nmapautomatorng
-Architecture: all
-Multi-Arch: foreign
+Architecture: any
 Depends:
- ${misc:Depends},
- nmap,
- gowitness,
- sslyze,
- nuclei,
- ssh-audit,
- ffuf,
- gobuster
-Description: penetration recon script
+ ${shlibs:Depends}, ${misc:Depends}, nmap, gowitness, sslyze, nuclei, ssh-audit, ffuf, gobuster
+Description: penetration testing recon script
  The main goal for this script is to automate the process of enumeration & recon that is run every time, and instead focus our attention on real pentesting.
