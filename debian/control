@@ -15,6 +15,7 @@ Architecture: all
 Multi-Arch: foreign
 Depends:
  ${misc:Depends},
+ nmap,
  gowitness,
  sslyze,
  nuclei,
