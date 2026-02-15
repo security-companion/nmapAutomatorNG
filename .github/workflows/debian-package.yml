@@ -16,4 +16,4 @@ jobs:
         with:
           name: artifact-deb
           path: |
-            ./*.deb
+            debian/artifacts/*.*
