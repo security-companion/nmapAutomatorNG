@@ -1,3 +1,5 @@
+name: debian-package creation
+
 on: push
 
 jobs:
