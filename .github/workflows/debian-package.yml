@@ -1,6 +1,6 @@
-name: debian-package creation
+name: debian-package creation without dependencies
 
-on: push
+on: workflow_dispatch
 
 jobs:
   build-debs:
