@@ -12,3 +12,8 @@ jobs:
           DEB_BUILD_OPTIONS: noautodbgsym
         with:
           buildpackage-opts: --build=binary --no-sign
+      - uses: actions/upload-artifact@v6
+        with:
+          name: artifact-deb
+          path: |
+            ./*.deb
