@@ -15,5 +15,11 @@ Architecture: all
 Multi-Arch: foreign
 Depends:
  ${misc:Depends},
+ gowitness,
+ sslyze,
+ nuclei,
+ ssh-audit,
+ ffuf,
+ gobuster
 Description: penetration recon script
  The main goal for this script is to automate the process of enumeration & recon that is run every time, and instead focus our attention on real pentesting.
