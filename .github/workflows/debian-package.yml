@@ -1,6 +1,6 @@
 name: debian-package creation without dependencies
 
-on: push
+on: workflow_dispatch
 
 jobs:
   build-debs:
@@ -8,6 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: jtdor/build-deb-action@v1
+        env:
+          DEB_BUILD_OPTIONS: noautodbgsym
+        with:
+          buildpackage-opts: --build=binary --no-sign
       - uses: actions/upload-artifact@v6
         with:
           name: artifact-deb
