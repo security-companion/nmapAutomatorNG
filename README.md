@@ -166,6 +166,16 @@ docker container run -it na
 ```
 ------
 
+## Build debian package from source
+```
+sudo apt update && sudo apt install build-essential devscripts debhelper dh-make git dh-python
+tar czvf ../nmapautomatorng_1.0.orig.tar.gz .
+debuild -us -uc
+dpkg -I ../nmapautoamting_1.0-1.deb
+```
+
+------
+
 ## Upcoming Features
 - [x] Support URL/DNS - Thanks @KatsuragiCSL
 - [x] Add extensions fuzzing for http recon
