@@ -12,6 +12,7 @@ jobs:
           DEB_BUILD_OPTIONS: noautodbgsym
         with:
           buildpackage-opts: --build=binary --no-sign
+          extra-build-deps: nmap, gowitness, sslyze, nuclei, ssh-audit, ffuf, gobuster
       - uses: actions/upload-artifact@v6
         with:
           name: artifact-deb
