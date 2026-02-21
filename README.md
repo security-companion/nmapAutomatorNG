@@ -106,7 +106,7 @@ Most of these should be installed by default in [Parrot OS](https://www.parrotse
   
 ## Installation:
 ```bash
-git clone https://github.com/21y4d/nmapAutomatorNG.git
+git clone https://github.com/security-companion/nmapAutomatorNG.git
 sudo ln -s $(pwd)/nmapAutomatorNG/nmapAutomatorNG.sh /usr/local/bin/
 ```
 
